@@ -1,0 +1,17 @@
+=-> './App.css'
+=-> 'react' React
+
+= (: (createElement e)) React
+
+= App -> ()
+  = (:: count setCount) (React.useState 0)
+  e 'div' :
+    e 'div' (: (className 'App-count'))
+      + 'Count: ' count
+    e 'div'
+      :
+        className 'App-increaseButton'
+        onClick (-> () (setCount (+ count 1)))
+      'Increase'
+
+<-= App

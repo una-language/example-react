@@ -1,0 +1,14 @@
+=-> './index.css'
+=-> './App' App
+=-> 'react' React
+=-> 'react-dom' ReactDOM
+=-> './reportWebVitals' reportWebVitals 
+
+= (: (createElement e)) React
+
+ReactDOM.render
+  e React.StrictMode :
+    e App :
+  document.getElementById 'root' 
+
+reportWebVitals ()
